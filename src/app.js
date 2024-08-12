@@ -32,7 +32,6 @@ const httpServer = app.listen(8080, () => {
 const socketServer = new Server(httpServer)
 
 socketServer.on('connection', async (socket) => {
-    console.log('id socket: ',socket.id)
 
     async function updateProducts() {
         try {
